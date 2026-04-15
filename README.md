@@ -26,6 +26,10 @@ Display: A 16×2 LCD display (I2C address 0x27) connects via the ESP32's I2C bus
 
 User Input: A momentary push button connected to GPIO 23, and ground (with internal pull-up enabled) allows the user to cycle through available sensor modes.
 
+
+### Pictorial Schematic
+![Pictorial Schematic](/images/OpenGaugePictorialSchematic.png)
+
 ## Code
 This project is implemented in Arduino C++ with PlatformIO for an ESP32-based OBD-II gauge. At a high level, main.cpp initializes the CAN interface and LCD display, then runs a simple state polling loop (IDLE and WAITING states) to request and display live vehicle data.
 
@@ -37,3 +41,4 @@ The runtime logic is designed to be bus-friendly and resilient. Requests are lim
 A custom PCB has been designed to provide a more integrated solution. The board features soldered pads for the ESP32 microcontroller, MCP2551 CAN transceiver, logic level shifter, and user button.
 
 Screw terminals provide connectors for the OBD-II diagnostic harness and I2C LCD display, and integrated mounting holes allow the buck converter and LCD to be secured directly to the board for a clean, compact layout. This design enables quick assembly for a more permanent design of this project.
+![PCB](/images/OpenGaugePCB.png)
