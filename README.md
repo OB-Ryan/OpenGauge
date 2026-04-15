@@ -42,3 +42,8 @@ A custom PCB has been designed to provide a more integrated solution. The board 
 
 Screw terminals provide connectors for the OBD-II diagnostic harness and I2C LCD display, and integrated mounting holes allow the buck converter and LCD to be secured directly to the board for a clean, compact layout. This design enables quick assembly for a more permanent design of this project.
 ![PCB](/images/OpenGaugePCB.png)
+
+PCB fabrication and source files are included in the `PCB/` directory:
+- EasyEDA source: `PCB/OpenGauge.json`
+- Manufacturing files: `PCB/OpenGauge_Gerber/`
+- Ordering notes: `PCB/README.md`
